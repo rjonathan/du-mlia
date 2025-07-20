@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport Étudiants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #003566;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .chart {
+            margin-bottom: 40px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rapport d'Analyse Étudiants</h1>
+
+    <div class="chart">
+        <h2>Répartition des Statuts</h2>
+        <img src="{{ statuts_img }}" alt="Statuts">
+    </div>
+
+    <div class="chart">
+        <h2>Distribution par Genre</h2>
+        {{ plotly_html | safe }}
+    </div>
+
+    <div class="chart">
+        <h2>Notes Mathématiques</h2>
+        <img src="{{ math_notes_img }}" alt="Notes Math">
+    </div>
+</body>
+
+</html>
