@@ -1,0 +1,71 @@
+definir dropout entre lycée ou etud sup
+
+on garder le dropout
+
+
+
+
+ATTENTION on hot encoding 
+qualification des parents : 3 classes
+c1 : [1,0,0]
+c2 : [0,1,0]
+c3 : [0,0,1]
+
+
+Isolement 
+C1 : [1,0]
+C2 = [0,1]
+
+Analyse de la sensibilité des paramètres
+=> on hot encoding
+
+
+attention, variable discrete et continue : normaliser les variables continues
+
+=> réseau de neurones ? 
+
+Apprendre plusiuers fois => répéter les expériences 
+voir les valuers moyennes
+
+
+1. normaliser les données
+2. apprendre plusieurs fois, analyse croisée
+3. voir les hyper paramètres
+4. nombre de dimensions
+
+Validation croisée
+
+
+cv best combinaison
+cv results : voir la liste des scores pour voir les variabilités entre les jeux de paramètre
+
+
+
+perceptron ?? 
+plusieurs modèles
+faire en plus un MLP 
+regression logistic, => linéaire | réseau de neurones => non linéaire (même si on a deux couches)
+
+=> trouver un graphe avec la moyenne et la variance pour chaque modèle
+VARIANCE !!!! et pas que la moyenne
+
+regression logistic on a la Pvaleur de chaque variables
+si on prend toute les variable sauf une est ce que ça change
+
+
+Ne pas regarder que la précision, voir la courbe ROC.
+
+ne pas regarder la classe, mais la proba d'etre dans cette classe
+
+AUC => air sous la courbe, 
+
+
+Montrer à l'assemblé, que l'on a pas regardé que la précision, mais aussi l'AUC etc .. 
+
+validation croisée
+
+
+
+
+
+
